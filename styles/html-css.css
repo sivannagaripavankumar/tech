@@ -1,0 +1,214 @@
+/* type  */
+.a12 {
+    display: flex;
+    flex-direction: column;
+    border: 4px  solid #000;
+    align-items: center;
+
+}
+#alt1 {
+    color: #350ceb;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-decoration-style: solid;
+}
+#h1{
+    display: flex;
+    flex-direction: column;
+    flex: 2 4 none;
+    align-items: center;     
+    color: rgb(160, 160, 226);
+ }
+h2 {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    text-transform: uppercase;
+    align-items: center;
+    color:  red;
+}
+ pre {
+    font-size: 1.5rem;
+    display: flex;
+    flex: 2 4 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: baseline;
+ }
+ 
+#p1 {
+    color: rgb(110, 92, 70);
+    display: flex;
+    flex: 2 5 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+p2 {
+    background-color: rgb(205, 189, 219);
+    font-size: medium;
+    font-family: 'Lucida Sans';
+    color: rgb(88, 77, 60);
+    border: 2px;
+    border-style: dashed;
+}
+img {
+    border-radius: 5px;
+    float: right;
+    background-color: #ce1212;
+    
+ }
+video {
+    width: 70%;
+    height: fit-content;
+}
+/* class  */
+.t1 {
+    border-collapse: collapse;
+    font-size: 1.5rem;
+    background-color: rgb(199, 247, 155);
+    color: rgb(184, 68, 68);
+    border: 3px solid black;
+}
+.t2 {
+    font-size: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: yellowgreen;
+    border: 2px solid black;
+} 
+.t3 {
+    font-size: normal;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    border: 2px solid black;
+} 
+th,td {
+    border: rgb(32, 32, 48) solid 3px;
+    padding: 4px;
+    text-align: center;
+
+}
+/* id */
+ 
+
+/* adjacent selector*/#u1 {
+    color: black;
+    font-size: medium;
+    font-family: 'Gill Sans';
+    margin: 15px;
+ }
+#u2 {
+    color: black;
+     font-size: medium;
+    font-family: 'Gill Sans';
+    margin: 15px;
+}
+#u3 {
+    color: black;
+    font-size: medium;
+    font-family: 'Gill Sans';
+    margin: 15px;
+}
+#u4 {
+    color: black;
+    font-size: medium;
+    font-family: 'Gill Sans';
+    margin: 15px;
+}
+.box, .box1,.box3, .box2, .box4, .box6, .box7, .box8 {
+    padding: 10px; /* Adjust padding */
+    border: 2px solid #ce1212;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto; /* Center align with auto margins */
+    background-color: #B3C8CF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Set a maximum width */
+}
+.f1 {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    align-items: center;
+ }
+.f3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(179, 193, 202);
+    border: 2px solid   black;
+    margin: 10px;
+}
+/* child selector*/
+pre audio {
+    color: aqua;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+  
+ 
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 100px; /* Set label width */
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex-grow: 1; /* Input field grows to fill remaining space */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+    
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="date"],
+input[type="time"],
+input[type="week"],
+input[type="search"],
+input[type="range"],
+input[type="color"] {
+    width: 100%; /* Make input fields fill the row */
+    max-width: 300px; /* Optional: max-width for input fields */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Higher Order Functions
+        </title>
+        <link href="/styles/high.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h2> Higher Order Functions</h2>
+        <P>Take function as an argument or return a function as a result</P>
+        <h2>Closures</h2>
+        <h2>Promises</h2>
+        <h2>Async and Await</h2>
+        <div id="head">
+            <h1>Form Validation</h1>
+            <div id="forms">
+                <div id="sform">
+                    <div>
+                        <form action="#" id="uform">
+                            <label>Username</label>
+                            <input type="text" required id="username" />
+                            <button type="submit" id="submit">Username Validate</button>
+                        </form>
+                    
+                    </div>
+                    <div>
+                        <form action="#" id="eForm">
+                            <label for="emailInput">Email</label>
+                            <input type="email" id="emailInput" required />
+                            <button type="submit" id="submitBtn">Email Validate</button>
+                            <p id="vm"></p> <!-- Element to show feedback -->
+                        </form>
+                    </div>
+                    <div>
+                        <form action="#" id="pForm">
+                        <label for="passwordInput">Password</label>
+                        <input  type="password" id="passwordInput"/>
+                        <button type="submit" id="Password">PasswordValidate</button>
+                        <label id="pm"></label>
+                        </form>
+                    </div>
+                </div>
+                <div id="vForm">
+                    <form id="validationForm">
+                        <label for="ageInput">Age:</label>
+                        <input type="number" id="ageInput" min="1" max="120" placeholder="25" />
+                        <br>   
+                        <label for="agreeCheckbox">Agree to terms:</label>
+                        <input type="checkbox" id="agreeCheckbox" />
+                        <br>
+                        <label>Gender:</label>
+                        <label for="maleRadio">Male:</label>
+                        <input type="radio" name="gender" id="maleRadio" value="Male" />
+                        <label for="femaleRadio">Female:</label>
+                        <input type="radio" name="gender" id="femaleRadio" value="Female" />
+                        <br>       
+                        <label for="countrySelect">Country:</label>
+                        <select id="countrySelect">
+                            <option value="">Select your country</option>
+                            <option value="USA">INDIA</option>
+                        </select>
+                        <br><br>
+                        <button type="submit">Submit</button>
+                        <p id="formFeedback"></p>
+                    </form>
+                </div>
+             </div>
+        </div>
+         <script src="/js/high.js"></script>
+    </body>
+</html>

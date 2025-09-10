@@ -1,0 +1,382 @@
+.transformations {
+    background-color: antiquewhite;
+    margin: 10px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.transformation-container {
+    padding: 20px;
+    margin: 30px;
+    background-color: aqua;
+    gap: 20px;
+}
+.translate,.translate2 {
+    background-color: blueviolet;
+    border: 2px solid rosybrown;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+.translate:hover {
+    transform: translate(100px,0);
+    padding: 30px;
+    height: 20vh;
+    background-color: darkcyan;
+     
+}
+.translate1,.translate3 {
+    background-color: rgb(226, 43, 43);
+    border: 2px solid rosybrown;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+.translate1:hover {
+    background-color: yellowgreen;
+    transform: translate(0,100px);
+    padding: 30px;
+    height: 20vh;
+}
+ 
+.translate2:hover {
+    background-color: yellowgreen;
+    transform: translateX(100px);
+    padding: 30px;
+    height: 20vh;
+}
+
+.translate4 {
+    background-color: rgb(43, 226, 83);
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.translate3:hover {
+    background-color: rgb(204, 224, 23);
+    transform: translateY(100px);
+    padding: 30px;
+    height: 20vh;
+}
+.translate4:hover {
+    transform: translateZ(100px);
+    background-color: coral;
+}
+
+
+.scale-container {
+    padding: 20px;
+    margin: 30px;
+    background-color: lightpink;
+    gap: 20px;
+}
+
+.scale,.scale2,.scale4 {
+    background-color: rgb(43, 226, 83);
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+.scale:hover {
+    transform: scale(0.5);
+}
+
+.scale1,.scale3 {
+    background-color: rgb(61, 43, 226);
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+.scale1:hover {
+    transform: scale(1.5,2);
+     
+}
+.scale2:hover {
+    transform: scaleX(2)   
+}
+.scale3:hover {
+    transform: scaleY(2)   
+}
+.scale4:hover {
+    transform: scaleZ(2);
+    background-color: red;
+}
+
+
+.rotate-container {
+    padding: 20px;
+    margin: 30px;
+    background-color: lightsalmon;
+    gap: 20px;
+}
+
+.rotate, .rotate2, .rotate4 {
+    background-color: rgb(226, 116, 43);
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+.rotate1,.rotate3 {
+    background-color: rgb(76, 43, 226);
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+ 
+.rotate:hover {
+    transform: rotate(90deg);
+}
+.rotate1:hover {
+    transform: rotate(-70deg);
+}
+.rotate2:hover {
+    transform: rotateY(60deg);
+}
+.rotate3:hover {
+    transform: rotateZ(-40deg);
+}
+.rotate4:hover {
+     transform: rotateX(70deg);
+}
+
+.skew-container {
+    padding: 20px;
+    margin: 30px;
+    background-color: rgb(137, 212, 16);
+    gap: 20px;
+}
+
+.skew, .skew2, .skew4 {
+    background-color: green;
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+.skew1,.skew3 {
+    background-color: white;
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+ 
+.skew:hover {
+    transform: skew(40deg,120deg);
+}
+.skew1:hover {
+    transform: skew(-70deg);
+}
+.skew2:hover {
+    transform: skewX(80deg)
+}
+.skew3:hover {
+    transform: skewY(-40deg);
+}
+.skew4:hover {
+     transform: skew(40deg,-30deg)
+}
+
+.mixed {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.m {
+    background-color: pink;
+    padding: 20px;
+    margin: 30px;
+}
+.m:hover {
+    transform: translate(100px) scale(2,4) rotate(40deg);
+}
+
+.transform-origin {
+    padding: 20px;
+    margin: 30px;
+    background-color: lightsalmon;
+    gap: 20px;
+}
+
+ 
+.to {
+    background-color: white;
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+.to1 {
+    background-color: white;
+    border: 2px solid rgb(188, 143, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    height: 10vh;
+}
+.to:hover {
+    transform-origin: left;
+    transform: rotate(20deg);
+}
+.to1:hover {
+    transform-origin: right;
+    transform: rotate(50deg);
+}
+
+
+.a {
+    border: rgb(15, 13, 17) solid 2px;
+    background-color: aqua;
+    height: 860px;
+    width: 860px;
+     
+}
+.a:hover {
+    background-color: black;
+    animation: anime2 3s infinite;
+}
+.anime-p1 {
+    border: rebeccapurple solid 2px;
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+   margin: 40px 50px;
+
+}
+ 
+.anime-p1  {
+    animation: anime1 4s infinite;
+}
+
+@keyframes anime1 {
+    0% {
+        transform: translate(0px,0px);
+        background-color: rgb(105, 128, 128);
+    }
+    30% {
+        transform: translate(300px,0px) rotate(40deg);
+        background-color: brown;
+    }
+    55% {
+        transform: translate(300px,300px) rotate(90deg);
+        background-color: rgb(240, 236, 15);
+    }
+    80% {
+        transform: translate(0px,300px) skew(20deg);
+        background-color: chartreuse;
+    }
+    100% {
+        transform: translate(0px,0px);
+        background-color: rgb(255, 0, 0);
+    }
+    
+}
+
+
+@keyframes anime2 {
+    0% {
+        transform: translate(0px,0px);
+        background-color: rgb(105, 128, 128);
+    }
+    30% {
+        transform: translate(300px,0px) rotate(40deg);
+        background-color: brown;
+    }
+    55% {
+        transform: translate(300px,300px) rotate(90deg);
+        background-color: rgb(240, 236, 15);
+    }
+    80% {
+        transform: translate(0px,300px) skew(20deg);
+        background-color: chartreuse;
+    }
+    100% {
+        transform: translate(0px,0px);
+        background-color: rgb(255, 0, 0);
+    }
+    
+} 
+ 
+.anime-p3 {
+    border: rebeccapurple solid 2px;
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+    margin: 40px 50px;
+    animation: anime3 4s infinite;
+}
+
+@keyframes anime3 {
+    0% {
+        transform: translate(0px,0px);
+        background-color: rgb(105, 128, 128);
+    }
+    30% {
+        transform: translate(0px,300px) rotate(40deg);
+        background-color: brown;
+    }
+    55% {
+        transform: translate(300px,300px) rotate(90deg);
+        background-color: rgb(240, 236, 15);
+    }
+    80% {
+        transform: translate(300px,0px) skew(20deg);
+        background-color: chartreuse;
+    }
+    100% {
+        transform: translate(0px,0px);
+        background-color: rgb(255, 0, 0);
+    }
+    
+}
+
+
+.anime-p {
+    border: rebeccapurple solid 2px;
+    border-radius: 300px;
+    height: 300px;
+    width: 300px;
+   margin: 40px 50px;
+}
+.anime-p {
+    animation: anime 1s 5;
+    opacity: 1;
+}
+
+@keyframes anime {
+    0% {
+        transform: translateY(200px);
+        background-color: aqua;
+    }
+    50% {
+        transform: rotateY(100deg);
+        background-color: blue;
+    }
+    100% {
+        transform: scaleX(2);
+        background-color: chartreuse;
+    }
+    85% {
+        transform: translate(400px) rotate(100deg) scale(2);
+        background-color: blueviolet;
+    }
+    70% {
+        transform: skewX(50deg);
+        background-color: brown;
+    }
+}

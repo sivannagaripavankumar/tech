@@ -1,0 +1,167 @@
+#head {
+    color: aqua;
+    background-color: blue;
+}
+.t {
+    color: red;
+    background-color: rgb(9, 201, 57);
+}
+
+.selectors {
+    border: 2px solid blue;
+    background-color: rgba(128, 128, 128, 0.24);
+    color: rgb(241, 7, 7);
+    margin: 30px auto;
+    padding: 20px;
+}
+.cc {
+    margin: 0px auto;
+    background-color: rgb(135, 222, 139);
+    border: 2px solid blue;
+    color: aliceblue;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+aside {
+    border: solid black double;
+    color: blanchedalmond;
+    background-color: blue;
+}
+.ar {
+    background-color: blueviolet;
+}
+.arc {
+    background-color: violet;
+}
+
+div {
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid red;
+}
+
+.b1 {
+    background-color: lightyellow;
+    color: aliceblue;
+    padding: 10px;
+    margin: 10px;
+}
+div {
+    border: 2px solid blue;
+    background-color: gray;
+    color: aliceblue;
+    margin: 30px auto;
+    padding: 20px;
+}
+#java.active {
+    background-color: aqua;
+    color: brown;
+}
+#python.active {
+    background-color: aqua;
+    color: brown;
+}
+#html.active {
+    background-color: yellow;
+    color: brown;
+}
+#css.active {
+    background-color: aqua;
+    color: brown;
+}
+.span {
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+.el {
+     
+    background-color: rosybrown;
+    border: 2px rebeccapurple solid;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 30px;
+}
+.me {
+     
+    border: 2px rebeccapurple solid;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: lightskyblue;
+}
+.mebtn {
+     
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.mebtn > input {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(137, 43, 226, 0.486);
+}
+
+.fe {
+    border: 2px rebeccapurple solid;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: lightskyblue;
+}
+.fe input[type="submit"] {
+    background-color: lightcoral;
+}
+.we {
+    border: 2px rebeccapurple solid;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: lightskyblue;
+}
+.am {
+    border: 2px rebeccapurple solid;
+    border-radius: 20px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: lightskyblue;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}
+.form {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  
+}
+.form input {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}

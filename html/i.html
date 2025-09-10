@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="/styles/i.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Send Your Message</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Profile Section -->
+        <section id="profile" class="profile-section visible">
+            <h2>Profile</h2>
+            <img src="/public/salaar.jpg" alt="Profile Photo" class="profile-photo">
+            <p>Name: <strong>S. Pavan Kumar</strong></p>
+            <p>Role: <strong>Full Stack Developer</strong></p>
+            <h3>About Me</h3>
+            <p>Bootstrap has reached wide-spread adoption among developers and the person who designed and built Envato. He's a programmer and web developer who enjoys a diverse array of hobbies, including building web apps. Many have expressed their desire for design customization beyond the default styles. This marketplace was created to solve.</p>
+            <p>Email: <a href="mailto:spavn.kumar83@gmail.com">spavn.kumar83@gmail.com</a></p>
+            <p>Phone: +91 9381827680</p>
+            <p>Nationality: Madiwala, Bangalore</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section visible">
+            <h2>Skills</h2>
+            <div>
+                <h3>Front-End Technologies</h3>
+                <div class="skills-icons">
+                    <div class="skill-box html-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-logo-small">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-box css-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-logo-small">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-box js-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo-small">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-box react-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-logo-small">
+                        <span>React</span>
+                    </div>
+                </div>
+                <h3>Back-End Technologies</h3>
+                <div class="skills-icons">
+                    <div class="skill-box java-icon">
+                        <i class="fab fa-java"></i>
+                        <span>Core Java</span>
+                    </div>
+                    <div class="skill-box mysql-icon">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section visible">
+            <h2>Projects</h2>
+            <div class="project-boxes">
+                <div class="project-box">
+                    <h3>Hangman Game</h3>
+                    <p>A classic word guessing game built using JavaScript and CSS.</p>
+                </div>
+                <div class="project-box">
+                    <a href="index.html">
+                    <h3>Front-End Syllabus</h3>
+                    <p>A comprehensive guide to learning front-end technologies.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section visible">
+            <h2>Send Your Message</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About</h2>
+            <div class="about-icons">
+                <a href="https://github.com/username" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/username" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.hackerrank.com/username" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+            </div>
+            <p>Connect with me on social media for updates and insights into my projects.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 S. Pavan Kumar. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

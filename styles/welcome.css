@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    font-family: Arial, sans-serif; /* Set the font */
+    border: 2px solid #133E87; /* Smaller border around the entire body */
+    box-sizing: border-box; /* Ensure the border is included in the total width/height */
+    padding: 40px; /* Add padding inside the border */
+    width: fit-content; /* Allow the width to adjust based on content */
+    background-image: url("/public/js.jpg");
+    background-size: cover;
+    margin-top: 200px;
+    margin-left: 80px;
+}
+
+body:hover {
+    transform: scale(1.1);
+    border: solid 4px #608cc134;
+    border-color: #000B58;
+    border-radius: 25px;
+ }
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.nav-list {
+    display: flex;
+    gap: 15px; /* Decrease space between links */
+    list-style-type: none; /* Removes default list style */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: flex;
+}
+
+.nav-list a {
+    display: block;
+    padding: 8px 15px; /* Adjust padding for a smaller border */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set text color */
+    border: 1px solid blue; /* Smaller border around each link */
+    border-radius: 5px; /* Rounded corners for the border */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for hover effect */
+}
+
+.nav-list a:hover {
+    background-color: blue; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.1,1.2);
+     
+}

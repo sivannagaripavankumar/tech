@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="/styles/i.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome for icons -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .about-section {
+            background-color: #e6f7ff; /* Light blue */
+        }
+
+        .skills-section {
+            background-color: #e0ffe0; /* Light green */
+        }
+
+        .projects-section {
+            background-color: #ffe6e6; /* Light red */
+        }
+
+        .contact-section {
+            background-color: #f2f2f2; /* Light grey */
+        }
+
+        .about-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .about-icons a {
+            color: #2d3e50; /* Icon color */
+            transition: color 0.3s ease;
+        }
+
+        .about-icons a:hover {
+            color: #f39c12; /* Change color on hover */
+        }
+
+        .profile-photo {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .skills-icons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            text-align: center;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: scale(1.05);
+        }
+
+        .tech-logo-small {
+            width: 50px;
+            height: 50px;
+        }
+
+        .project-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project-box {
+            width: 45%;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Send Your Message</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Profile Section -->
+        <section id="profile" class="visible">
+            <h2>Profile</h2>
+            <img src="/public/salaar.jpg" alt="Profile Photo" class="profile-photo">
+            <p>Name: <strong>S. Pavan Kumar</strong></p>
+            <p>Role: <strong>Full Stack Developer</strong></p>
+            <h3>About Me</h3>
+            <p>Bootstrap has reached wide-spread adoption among developers and the person who designed and built Envato. He's a programmer and web developer who enjoys a diverse array of hobbies, including building web apps. Many have expressed their desire for design customization beyond the default styles. This marketplace was created to solve.</p>
+            <p>Email: <a href="mailto:spavn.kumar83@gmail.com">spavn.kumar83@gmail.com</a></p>
+            <p>Phone: +91 9381827680</p>
+            <p>Nationality: Madiwala, Bangalore</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section visible">
+            <h2>Skills</h2>
+            <div>
+                <h3>Front-End Technologies</h3>
+                <div class="skills-icons">
+                    <div class="skill-box html-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="tech-logo-small">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-box css-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="tech-logo-small">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-box js-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo-small">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-box react-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="tech-logo-small">
+                        <span>React</span>
+                    </div>
+                </div>
+                <h3>Back-End Technologies</h3>
+                <div class="skills-icons">
+                    <div class="skill-box java-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="tech-logo-small">
+                        <span>Core Java</span>
+                    </div>
+                    <div class="skill-box mysql-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tech-logo-small">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-box sql-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sql/sql-original.svg" alt="SQL" class="tech-logo-small">
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section visible">
+            <h2>Projects</h2>
+            <div class="project-boxes">
+                <div class="project-box">
+                    <h3>Hangman Game</h3>
+                    <p>A classic word guessing game built using JavaScript and CSS.</p>
+                </div>
+                <div class="project-box">
+                    <a href="index.html">
+                        <h3>Front-End Syllabus</h3>
+                        <p>A comprehensive guide to learning front-end technologies.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section visible">
+            <h2>Send Your Message</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section visible">
+            <h2>About</h2>
+            <div class="about-icons">
+                <a href="https://github.com/username" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/username" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.hackerrank.com/username" target="_blank" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+            </div>
+            <p>Connect with me on social media for updates and insights into my projects.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 S. Pavan Kumar</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('section').forEach(section => {
+                if (window.scrollY + window.innerHeight > section.offsetTop + section.offsetHeight / 2) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
